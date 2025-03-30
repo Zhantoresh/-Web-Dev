@@ -1,0 +1,13 @@
+<h1>Albums</h1>
+
+<input [(ngModel)]="newAlbumTitle" placeholder="Title of album" />
+<button (click)="createAlbum()">Add album</button>
+
+<ul>
+  @for (album of albums; track album.id) {
+  <li>
+    <a [routerLink]="['/albums', album.id]">{{ album.title }}</a>
+    <button (click)="deleteAlbum(album.id)">Delete</button>
+  </li>
+  }
+</ul>

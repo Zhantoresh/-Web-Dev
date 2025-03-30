@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facebook — Выполните вход или зарегистрируйтесь</title>
+    <link
+      rel="icon"
+      href="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-256.png"
+    />
+    <style>
+      body {
+        background-color: rgb(239, 242, 245);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      #logo {
+        margin-left: 265px;
+        margin-top: 200px;
+        width: 250px;
+      }
+      #advantage {
+        margin-left: 265px;
+        font-size: 27px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #authorization {
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 390px;
+        height: 340px;
+        margin-left: 845px;
+        margin-top: -270px;
+        margin-bottom: 20px;
+        padding: 20px;
+        gap: 15px;
+      }
+      #text-under-authorization {
+        margin-left: 600px;
+        margin-top: 0px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14.5px;
+      }
+      input:focus {
+        outline: 2px solid blue;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+      }
+
+      #email-address,
+      #password {
+        width: 100%;
+        height: 50px;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      #enter {
+        width: 100%;
+        height: 50px;
+        background-color: blue;
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #forgot-password {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+      #forgot-password:link {
+        color: blue;
+        text-decoration: none;
+      }
+      #forgot-password:hover {
+        text-decoration: underline;
+      }
+      #forgot-password:visited {
+        color: blue;
+      }
+
+      #create-new-acc {
+        display: inline-block;
+        width: 70%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: rgb(40, 207, 40);
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+      }
+      #words {
+        color: black;
+        text-decoration: none;
+      }
+      #words:hover {
+        text-decoration: underline;
+      }
+      #create-new-acc:hover {
+        background-color: rgb(3, 148, 3);
+      }
+      #create-new-acc:active {
+        background-color: darkgreen;
+      }
+
+      #enter:hover {
+        background-color: darkblue;
+      }
+      #content {
+        flex: 1;
+      }
+      footer {
+        background-color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        margin-top: 180px;
+      }
+      .links {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        margin: 20px 5px;
+      }
+      .links:link {
+        color: gray;
+      }
+      .links:visited {
+        color: gray;
+      }
+      .links:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <img
+        id="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/8/89/Facebook_Logo_%282019%29.svg"
+      />
+      <p id="advantage">
+        Facebook помогает вам всегда <br />
+        оставаться на связи и общаться со <br />
+        своими знакомыми.
+      </p>
+    </div>
+    <div id="authorization">
+      <input
+        id="email-address"
+        type="text"
+        placeholder="Электронный адрес или номер телефона"
+      />
+      <input id="password" type="password" placeholder="Пароль" />
+      <button id="enter" class="button">Вход</button>
+      <a
+        id="forgot-password"
+        href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
+        >Забыли пароль?</a
+      >
+      <hr width="95%" />
+      <a
+        id="create-new-acc"
+        class="button"
+        href="https://www.facebook.com/r.php?entry_point=login"
+      >
+        Создать новый аккаунт
+      </a>
+    </div>
+    <p id="text-under-authorization">
+      <strong
+        ><a
+          id="words"
+          href="https://www.facebook.com/pages/create/?ref_type=registration_form"
+          >Создать Страницу</a
+        ></strong
+      >
+      знаменитости, музыкальной группы или
+      <br />
+      компании.
+    </p>
+    <footer>
+      <a class="links" href="https://www.facebook.com/?locale=ru_RU">Русский</a>
+      <a class="links" href="https://id-id.facebook.com/?locale=id_ID"
+        >Bahasa Indonesia</a
+      >
+      <a class="links" href="https://kk-kz.facebook.com/?locale=kk_KZ"
+        >Қазақша</a
+      >
+      <a class="links" href="https://www.facebook.com/?locale=en_US"
+        >English(US)</a
+      >
+      <a class="links" href="https://tr-tr.facebook.com/?locale=tr_TR"
+        >Türkçe</a
+      >
+      <a class="links" href="https://zh-cn.facebook.com/?locale=zh_CN"
+        >中文(简体)</a
+      >
+      <a class="links" href="https://de-de.facebook.com/?locale=de_DE"
+        >Deutsch</a
+      >
+      <a class="links" href="https://ko-kr.facebook.com/?locale=ko_KR"
+        >한국어</a
+      >
+      <a class="links" href="https://sq-al.facebook.com/?locale=sq_AL">Shqip</a>
+      <a class="links" href="https://es-la.facebook.com/?locale=es_LA"
+        >Español</a
+      >
+      <a class="links" href="https://pt-br.facebook.com/?locale=pt_BR"
+        >Português (Brasil)
+      </a>
+      <hr width="70%" />
+      <a class="links" href="https://www.facebook.com/reg/"
+        >Зарегистрироваться</a
+      >
+      <a class="links" href="https://www.facebook.com/login/">Вход</a>
+      <a class="links" href="https://www.messenger.com/">Мессенджер</a>
+      <a class="links" href="https://www.facebook.com/lite/">Facebook Lite</a>
+      <a class="links" href="https://www.facebook.com/watch/">Видео</a>
+      <a class="links" href="https://www.facebook.com/places/">Места</a>
+      <a class="links" href="https://www.facebook.com/gaming/play/">Игры</a>
+      <a class="links" href="https://www.facebook.com/marketplace/"
+        >Marketplace</a
+      >
+      <a
+        class="links"
+        href="https://about.meta.com/technologies/meta-pay"
+        target="_blank"
+        >Meta Pay</a
+      >
+      <a class="links" href="https://www.meta.com/" target="_blank"
+        >Магазин Meta</a
+      >
+      <a class="links" href="https://www.meta.com/quest/" target="_blank"
+        >Meta Quest</a
+      >
+      <a
+        class="links"
+        href="https://www.meta.com/ai-glasses/?utm_source=www.facebook.com&utm_medium=organicsearch"
+        target="_blank"
+        >Ray-Ban Meta</a
+      >
+      <br />
+      <a class="links" href="https://www.meta.ai/">Meta AI</a>
+      <a class="links" href="https://www.instagram.com/" target="_blank"
+        >Instagram</a
+      >
+      <a class="links" href="https://www.threads.net/">Threads</a>
+      <a class="links" href="https://www.facebook.com/fundraisers/"
+        >Благотворительные акции</a
+      >
+      <a class="links" href="https://www.facebook.com/biz/directory/">Услуги</a>
+      <a class="links" href="https://www.facebook.com/votinginformationcenter/"
+        >Центр информации о выборах</a
+      >
+      <a
+        class="links"
+        href="https://www.facebook.com/privacy/policy/?entry_point=facebook_page_footer"
+        >Политика конфиденциальности</a
+      >
+      <a
+        class="links"
+        href="https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer"
+        >Центр конфиденциальности</a
+      >
+      <br />
+      <a class="links" href="https://www.facebook.com/groups/discover/"
+        >Группы</a
+      >
+      <a class="links" href="https://about.meta.com/">Информация</a>
+      <a
+        class="links"
+        href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fads%2Fcreate%2F%3Fnav_source%3Dunknown%26campaign_id%3D402047449186%26placement%3Dpflo%26extra_1%3Dnot-admgr-user&campaign_id=402047449186"
+        >Создать рекламу</a
+      >
+      <a
+        class="links"
+        href="https://www.facebook.com/pages/create/?ref_type=site_footer"
+        >Создать Страницу</a
+      >
+      <a class="links" href="https://developers.facebook.com/?ref=pf"
+        >Разработчикам</a
+      >
+      <a class="links" href="https://www.metacareers.com/">Вакансии</a>
+      <a
+        class="links"
+        href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0"
+        >Файлы cookie</a
+      >
+      <a class="links" href="https://www.facebook.com/help/568137493302217"
+        >Рекламные предпочтения</a
+      >
+      <a class="links" href="https://www.facebook.com/policies_center/"
+        >Условия использования</a
+      >
+      <br />
+      <a class="links" href="https://www.facebook.com/help/?ref=pf">Справка</a>
+      <a class="links" href="https://www.facebook.com/help/637205020878504"
+        >Загрузка контактов и лица, не являющиеся пользователями
+      </a>
+      <p style="margin-left: -900px; color: gray">Meta © 2025</p>
+    </footer>
+  </body>
+</html>
