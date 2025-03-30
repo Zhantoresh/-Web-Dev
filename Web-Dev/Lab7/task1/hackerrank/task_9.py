@@ -1,0 +1,6 @@
+n = int(input().strip())  
+arr1 = set(map(int, input().split()))  
+m = int(input().strip())  
+arr2 = set(map(int, input().split()))  
+intersection_set = arr1.intersection(arr2)  
+print(len(intersection_set))  
